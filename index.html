@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gra Dzik</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Gra Dzik</h1>
+        <div id="ustawienia-gry">
+            <label for="poziom-trudnosci">Poziom trudności:</label>
+            <select id="poziom-trudnosci">
+                <option value="1500">Łatwy</option>
+                <option value="1000">Średni</option>
+                <option value="700">Trudny</option>
+            </select>
+            <button id="start">Start</button>
+        </div>
+
+        <div id="gra" style="display:none;">
+            <p id="licznik">0</p>
+            <button id="przycisk-napoju">
+                <img src="napoj-dzik.png" alt="Napój Dzika">
+            </button>
+            <p id="wynik">Wynik: 0</p>
+        </div>
+        <p id="komunikat"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
